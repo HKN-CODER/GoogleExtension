@@ -15,7 +15,7 @@
   // Replace this URL with your deployed Web App URL.
   // Example: https://script.google.com/macros/s/AKfycb.../exec
   // ============================================================
-  const GS_WEBAPP_URL = "https://script.google.com/macros/s/AKfycbwk73Z-aeyLpl7DX8Azdp7VGrjRT7ix8R8Rr6HMulKfgLeLBn5iPO4neeH9S1kWLewA/exec";
+  const GS_WEBAPP_URL = "";
 
   // Prevent double injection
   if (window.__SB_DELTA_GS_V1_LOADED__) return;
