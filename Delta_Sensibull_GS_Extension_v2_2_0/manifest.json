@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Delta for Sensibull (Google Sheets)",
+  "version": "2.2.1",
+  "description": "Displays delta range tables (Calls + Puts) on Sensibull and pushes the data to Google Sheets via Apps Script Web App (overwrite mode).",
+  "icons": {
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://web.sensibull.com/option-chain*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
